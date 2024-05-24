@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Search</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Map Search</h1>
+        <div class="search-box">
+            <div class="select-wrapper">
+                <input type="text" id="countryInput" placeholder="Enter country name">
+            </div>
+            <div class="temperature-input">
+                <input type="number" id="temperatureInput" min="-100" max="100">
+            </div>
+            <button onclick="searchCountry()">Search</button>
+        </div>
+        <div id="map-container">
+            <div id="map"></div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
